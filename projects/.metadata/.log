@@ -1,0 +1,266 @@
+!SESSION 2019-12-06 22:10:04.451 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-06 22:11:14.165
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\John'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2019-12-06 22:12:53.846
+!MESSAGE The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+!STACK 0
+org.eclipse.oomph.util.IORuntimeException: The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:333)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:77)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:97)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.snapshot(LazyProfile.java:317)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:149)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:131)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExistingFeatures(ExtensionUtility.java:418)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getAllExtensionsWithServer(ExtensionUtility.java:464)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExtensionsWithServer(ExtensionUtility.java:550)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.refreshServerAdapters(ExtensionUtility.java:681)
+	at org.eclipse.wst.server.discovery.Discovery.refreshServerAdapters(Discovery.java:68)
+	at org.eclipse.wst.server.ui.ServerUIUtil$1RefreshJob.run(ServerUIUtil.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:719)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:325)
+	... 12 more
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2019-12-06 22:12:54.219
+!MESSAGE The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+!STACK 0
+org.eclipse.oomph.util.IORuntimeException: The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:333)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:77)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:97)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.snapshot(LazyProfile.java:317)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:149)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:131)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExistingFeatures(ExtensionUtility.java:418)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getAllExtensionsWithServer(ExtensionUtility.java:464)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExtensionsWithServer(ExtensionUtility.java:550)
+	at org.eclipse.wst.server.discovery.Discovery.getExtensionsWithServer(Discovery.java:38)
+	at org.eclipse.wst.server.core.ServerCore.createProxyRuntimeTypes(ServerCore.java:318)
+	at org.eclipse.wst.server.core.ServerCore.loadDARuntimeTypes(ServerCore.java:313)
+	at org.eclipse.wst.server.core.ServerCore.getDownloadableRuntimeTypes(ServerCore.java:181)
+	at org.eclipse.wst.server.ui.internal.viewers.RuntimeTypeTreeContentProvider.deferredAdapterInitialize(RuntimeTypeTreeContentProvider.java:90)
+	at org.eclipse.wst.server.ui.internal.viewers.AbstractTreeContentProvider$1.run(AbstractTreeContentProvider.java:59)
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:719)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:325)
+	... 14 more
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2019-12-06 22:12:54.269
+!MESSAGE The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+!STACK 0
+org.eclipse.oomph.util.IORuntimeException: The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:333)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:77)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:97)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.snapshot(LazyProfile.java:317)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:149)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:131)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExistingFeatures(ExtensionUtility.java:418)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getAllExtensions(ExtensionUtility.java:486)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.refreshServerAdapters(ExtensionUtility.java:683)
+	at org.eclipse.wst.server.discovery.Discovery.refreshServerAdapters(Discovery.java:68)
+	at org.eclipse.wst.server.ui.ServerUIUtil$1RefreshJob.run(ServerUIUtil.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:719)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:325)
+	... 11 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-12-06 22:12:55.895
+!MESSAGE Connection to http://www.pramati.com/downloads/eclipse/updates/site.xml failed on sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 24 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 30 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-12-06 22:12:57.098
+!MESSAGE Connection to http://www.pramati.com/downloads/eclipse/updates/p2.index failed on sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 24 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 30 more
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2019-12-06 23:42:39.632
+!MESSAGE The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+!STACK 0
+org.eclipse.oomph.util.IORuntimeException: The file C:\Users\John\.p2\org.eclipse.equinox.p2.engine\profileRegistry\C__Users_John_eclipse_jee-2019-032_eclipse.profile\1554961871056.profile.gz of length 345 failed to load properly
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:333)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:77)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.getDelegate(LazyProfile.java:97)
+	at org.eclipse.oomph.p2.internal.core.LazyProfile.snapshot(LazyProfile.java:317)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:149)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfiles(LazyProfileRegistry.java:131)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExistingFeatures(ExtensionUtility.java:418)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getAllExtensionsWithServer(ExtensionUtility.java:464)
+	at org.eclipse.wst.server.discovery.internal.ExtensionUtility.getExtensionsWithServer(ExtensionUtility.java:550)
+	at org.eclipse.wst.server.discovery.Discovery.getExtensionsWithServer(Discovery.java:38)
+	at org.eclipse.wst.server.core.ServerCore.createProxyServers(ServerCore.java:328)
+	at org.eclipse.wst.server.core.ServerCore.loadDAServerTypes(ServerCore.java:302)
+	at org.eclipse.wst.server.core.ServerCore.getDownloadableServers(ServerCore.java:169)
+	at org.eclipse.wst.server.ui.internal.viewers.ServerTypeTreeContentProvider.deferredAdapterInitialize(ServerTypeTreeContentProvider.java:149)
+	at org.eclipse.wst.server.ui.internal.viewers.AbstractTreeContentProvider$1.run(AbstractTreeContentProvider.java:59)
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:719)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.loadProfile(LazyProfileRegistry.java:325)
+	... 14 more
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-12-06 23:42:39.669
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2019-12-07 11:19:53.392 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-07 11:20:48.023
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2019-12-07 11:20:56.545
+!MESSAGE A workspace crash was detected. The previous session did not exit normally. Not using saved taglib indexes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-07 11:20:59.466
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\John'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-06-08 11:04:03.489 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-08 11:04:29.387
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\John'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
